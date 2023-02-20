@@ -1,0 +1,18 @@
+name: Upload file to S3
+description: Uploads a file to an S3 bucket
+inputs:
+  iam-role-arn:
+    description: 'The ARN of the IAM role to assume'
+    required: true
+  bucket-name:
+    description: 'The name of the S3 bucket to upload the file to'
+    required: true
+  file-name:
+    description: 'The name of the file to upload to the S3 bucket'
+    required: true
+outputs:
+  s3-object-url:
+    description: 'The URL of the uploaded object in the S3 bucket'
+runs:
+  using: 'node16'
+  main: 'index.js'
