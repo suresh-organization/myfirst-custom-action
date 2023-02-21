@@ -18,6 +18,6 @@ jobs:
 
       - uses: ./.github/actions
         with:
-          role-to-assume: ${{ secrets.IAMROLE_GITHUB }}
-          role-session-name: GitHub-Action-Role
-          aws-region: ${{ env.AWS_REGION }}
+          iam-role-arn: ${{ secrets.IAMROLE_GITHUB }}
+          bucket-name: github-action-suresh
+          filename: helloworld.py
