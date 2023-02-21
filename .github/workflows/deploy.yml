@@ -20,4 +20,4 @@ jobs:
         with:
           iam-role-arn: ${{ secrets.IAMROLE_GITHUB }}
           bucket-name: github-action-suresh
-          filename: helloworld.py
+          file-name: helloworld.py
